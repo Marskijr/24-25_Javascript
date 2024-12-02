@@ -5,7 +5,9 @@
   <title>Challenge 2</title>
 </head>
 <body>
-<!-- Add a button that when you click it, the background of the table changes to blue -->
+<!-- Add a button that when you click it, the background of the table changes to blue
+
+ turn into toggle -->
 
 <table id="table">
   <tr>
@@ -47,9 +49,35 @@
 
 <button onclick="backgroundchange()">Click Me</button>
 
+<button type="button" onclick="toggle()">Toggle</button>
+
 <script>
   function backgroundchange(){
     document.getElementById("table").style.backgroundColor = "blue"
+
+    const text = document.getElementById("table");
+
+
+    if(image.style.display === "block"){
+      image.style.display = "none";
+    }else{
+      image.style.display = "white";
+    }
+
+  }
+
+
+
+  function toggle(){
+    show = Number(0);
+
+    const image = document.getElementById("table");
+
+    if(image.style.display === "block"){
+      image.style.display = "none";
+    }else{
+      image.style.display = "block";
+    }
   }
 </script>
 </body>
