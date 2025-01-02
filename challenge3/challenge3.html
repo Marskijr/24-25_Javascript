@@ -2,23 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>challenge 3</title>
+    <title>Challenge 3</title>
 </head>
 <body>
+<img src="../img/onepiece.jpg" width="100px" id="img" onmouseout="appear()" onmouseover="dissappear()">
 
-<img id="goby" src="../img/goby.png" onmouseover="mySecondFunction()" alt="goby"/>
 
-</button>
 <script>
+    function dissappear(){
+        document.getElementById('img').style.display = "none";
+    }
 
-  function mySecondFunction(){
-
-    document.getElementById("goby").style.display = "none";
-  }
-
-  function appear(){
-    document.getElementById("goby").style.display = "block";
-  }
+    function appear(){
+        document.getElementById('img').style.display = "block";
+    }
 </script>
 </body>
 </html>

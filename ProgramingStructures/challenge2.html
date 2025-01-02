@@ -5,15 +5,12 @@
   <title>Challenge 2</title>
 </head>
 <body>
-<!-- Add a button that when you click it, the background of the table changes to blue
-
- turn into toggle
- toggle between 2 colors -->
+<!-- Add a button that when you click it, the background of the table changes to blue -->
 
 <table id="table">
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
+    <th>Nicholas</th>
+    <th>Gordon</th>
     <th>Country</th>
   </tr>
   <tr>
@@ -48,22 +45,30 @@
   </tr>
 </table>
 
-<button onclick="backgroundchange()">Click Me</button>
-
-<button type="button" onclick="toggle()">Toggle</button>
-
+<button type="button" onclick="backgroundChange()">Click Me</button>
+<button type="button" onclick="backgroundChange1">Click Me 2</button>
+<button type="button" onclick="backgroundchange2">Click me 3</button>
 
 <script>
-  table = document.getElementById("Table");
+  //document.getElementById("table").style.backgroundColor = "blue";
+
+  // Access to the HTML Element
+  table = document.getElementById("table");
   counter = 0;
-  function toggle(){
-    if(counter % 2 === 0){
+
+  function backgroundChange(){
+    if (counter % 2 === 0){
       table.style.backgroundColor = "red";
     }else{
       table.style.backgroundColor = "blue";
+    }else{
+      table.style.backgroundColor = "yellow";
     }
     counter++;
+
   }
+
 </script>
+
 </body>
-</html>
+</html>`
